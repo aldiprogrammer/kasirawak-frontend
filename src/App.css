@@ -1,0 +1,105 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  /* Bold */
+}
+
+p {
+  font-weight: 400;
+  /* Normal */
+}
+
+
+.card-produk {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-produk:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.keranjang {
+  height: 50px;
+  background-color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.listkeranjang {
+  /* background-color: silver; */
+}
+
+@media (min-width: 768px) {
+  #notifcart {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #keranjangpesanan {
+    display: none;
+  }
+}
+
+.print-container {
+  width: 58mm;
+  /* Atur ukuran kertas struk */
+  padding: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.receipt {
+  width: 100%;
+  text-align: center;
+}
+
+.store-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.store-address {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.receipt-body {
+  text-align: left;
+  font-size: 12px;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.receipt-table th,
+.receipt-table td {
+  padding: 4px;
+  text-align: left;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed black;
+  margin: 5px 0;
+}
+
+.thank-you {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
